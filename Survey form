@@ -1,33 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
  <html lang="en"></html>
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, intial-scale=1.0">
- <title>The Coders Survey</title>
- <link rel="stylesheet" href="styles.css">
+ <title>Dog lovers survey</title>
+ <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <h1 id="title">The Coders Survey</h1>
-  <p id="description">Please take this survey to help improve our ability to teach new coders.</p>
- <form id="survery-form">
+  <h1 id="title" class="title">Dog lovers survey</h1>
+  <p class="p1" id="description">Please take this survey to help us understand different dog-loving prespectives.</p>
+ <form id="survey-form">
   <fieldset>
-   <label for="name">Enter your name<input id="name" input="text"></label>
-   <label for="email">Enter your email<input id="email" input="text"></label>
-   <label for="number">Enter your phone number<input id="number" input="text"></label>
-
+   <label id="name-label" for="name">Name<input id="name" input="text" placeholder="Enter your name here." required></label>
+   <label id="email-label" for="email">Email<input id="email" type="email" input="text" required placeholder="Enter your email here."></label>
+   <label id="number-label" for="number">Phone number<input min="0" max="9" id="number" input="text" placeholder="Enter your phone number here." type="number"></label>
+   <p class="p2">What size dog do you care for?</p>
+    <select id="dropdown">
+    <option value="">Select one</option>
+    <option value="1">X-small</option>
+    <option value="2">Small</option>
+    <option value="3">Medium</option>
+    <option value="4">Large</option>
+    </select>
+   <p class="p3">Would you recommend a friend own a dog?</p>
+    <div class="l3"><label for="yes"><input value="1" id="yes" type="radio" name="coding-question2" checked><span class="checkmark"><span>Yes</label>
+    <label for="no"><input value="2" id="no" type="radio" name="coding-question2">No</label>
+    <label for="maybe"><input value="3" id="maybe" type="radio" name="coding-question2">Maybe</label></div>
+   <p class="p4">Which breeds of dogs do you connect with most?(Check all that apply.)</p>
+    <label class="l4"><input type="checkbox" value="1">German shepherd</label>
+    <label class="l4"><input type="checkbox" value="2">Labrador retriever</label>
+    <label class="l4"><input type="checkbox" value="3">Husky</label>
+    <label class="l4"><input type="checkbox" value="4">Chihuahua</label>
+    <label class="l4"><input type="checkbox" value="5">Great dane</label>
+    <label class="l4"><input type="checkbox" value="6">Corgi</label>
+   <b><p class="p5">We would love to hear your feedback!</p></b>
+    <div class="t1"><textarea class="t1-1" rows="4" cols="50" placeholder="Additional comments here..."></textarea></div>
+   <input class="submit" type="submit" value="Submit" id="submit">
 </fieldset>
-
-
-
-
  </form>
 </body>
-
-
-
-
-
-
 
 
 
